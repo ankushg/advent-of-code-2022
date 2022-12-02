@@ -3,9 +3,9 @@ import com.github.ajalt.mordant.table.table
 import com.github.ajalt.mordant.terminal.Terminal
 
 abstract class Solution<AnswerType>(
-        private val dayNumber: String,
-        private val part1ExpectedAnswer: AnswerType,
-        private val part2ExpectedAnswer: AnswerType? = null
+    private val dayNumber: String,
+    private val part1ExpectedAnswer: AnswerType,
+    private val part2ExpectedAnswer: AnswerType? = null
 ) {
     abstract fun part1(input: List<String>): AnswerType
     abstract fun part2(input: List<String>): AnswerType

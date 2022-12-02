@@ -1,4 +1,4 @@
-import java.util.PriorityQueue
+
 
 @JvmInline
 private value class Elf(private val inventory: List<Int>) {
@@ -6,9 +6,9 @@ private value class Elf(private val inventory: List<Int>) {
 }
 
 object Day01 : Solution<Int>(
-        dayNumber = "01",
-        part1ExpectedAnswer = 24000,
-        part2ExpectedAnswer = 45000
+    dayNumber = "01",
+    part1ExpectedAnswer = 24000,
+    part2ExpectedAnswer = 45000
 ) {
     private fun buildElfList(input: List<String>): List<Elf> {
         val elves = mutableListOf<Elf>()
@@ -60,4 +60,3 @@ object Day01 : Solution<Int>(
 fun main() {
     Day01.main()
 }
-
